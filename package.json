@@ -2,16 +2,13 @@
   "name": "@codelovesme/backuper",
   "version": "0.0.1",
   "description": "",
-  "main": ".dist/src/index.js",
+  "main": "dist/index.js",
   "directories": {
     "test": "test"
   },
   "private": false,
   "scripts": {
-    "test": "mocha .dist/test/index.js",
-    "build": "gulp build",
-    "export-build": "gulp publish",
-    "start": "npm run build && npm test && node ."
+    "compile": "tsc -p ."
   },
   "keywords": [
     "git",
@@ -32,17 +29,21 @@
     "nodemailer": "^4.6.7",
     "progress": "^2.0.0",
     "simple-git": "^1.96.0",
+    "child_process": "^1.0.2",
     "spawngo": "git+https://git@github.com/codelovesme/spawngo.git#v2.1.0"
   },
   "devDependencies": {
-    "@types/mocha": "^2.2.40",
-    "@types/node": "^7.0.14",
-    "child_process": "^1.0.2",
-    "gulp": "^4.0.0",
-    "gulp-mocha": "^4.3.1",
-    "gulp-sourcemaps": "^2.6.1",
-    "gulp-typescript": "^3.0.1",
-    "merge2": "^1.2.0",
-    "typescript": "^2.3.3"
+    "typescript": "^3.6.3",
+    "@types/node": "^12.12.62"
+  },
+  "files": [
+    "dist",
+    "LICENSE.txt",
+    "package.json",
+    "README.md",
+    "yarn.lock"
+  ],
+  "bin": {
+    "backuper": "dist/index.js"
   }
 }

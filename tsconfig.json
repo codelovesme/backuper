@@ -1,15 +1,15 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "target": "es6",
-        "noImplicitAny": true,
-        "removeComments": false,
-        "sourceMap": false,
-        "declaration":false
-    },
-    "exclude":[
-        "node_modules",
-        ".dist",
-        ".vscode"
-    ]
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "lib": ["es2018"],
+    "types": ["node"],
+    "noImplicitAny": true,
+    "removeComments": false,
+    "sourceMap": false,
+    "declaration": false,
+    "outDir": "dist",
+    "incremental": true
+  },
+  "exclude": ["node_modules", "dist", ".vscode"]
 }
