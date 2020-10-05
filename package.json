@@ -10,7 +10,7 @@
   "scripts": {
     "test": "mocha .dist/test/index.js",
     "build": "gulp build",
-    "publish": "gulp publish",
+    "export-build": "gulp publish",
     "start": "npm run build && npm test && node ."
   },
   "keywords": [
