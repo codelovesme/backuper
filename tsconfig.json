@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "noImplicitAny": true,
+        "removeComments": false,
+        "sourceMap": false,
+        "declaration":false
+    },
+    "exclude":[
+        "node_modules",
+        ".dist",
+        ".vscode"
+    ]
+}

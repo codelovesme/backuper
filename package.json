@@ -1,0 +1,48 @@
+{
+  "name": "@codelovesme/backuper",
+  "version": "0.0.1",
+  "description": "",
+  "main": ".dist/src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "private": false,
+  "scripts": {
+    "test": "mocha .dist/test/index.js",
+    "build": "gulp build",
+    "publish": "gulp publish",
+    "start": "npm run build && npm test && node ."
+  },
+  "keywords": [
+    "git",
+    "node",
+    "mongo",
+    "mngodb",
+    "backup"
+  ],
+  "author": "codelovesme",
+  "license": "GPL v2",
+  "dependencies": {
+    "@euglena/core": "0.1.7",
+    "@euglena/organelle.time.js": "^0.1.0",
+    "@euglena/template": "2.2.0",
+    "cessnalib": "^0.2.0",
+    "cessnalib.nodejs": "0.0.3",
+    "jsonminify": "^0.4.1",
+    "nodemailer": "^4.6.7",
+    "progress": "^2.0.0",
+    "simple-git": "^1.96.0",
+    "spawngo": "git+https://git@github.com/codelovesme/spawngo.git#v2.1.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.0.14",
+    "child_process": "^1.0.2",
+    "gulp": "^4.0.0",
+    "gulp-mocha": "^4.3.1",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-typescript": "^3.0.1",
+    "merge2": "^1.2.0",
+    "typescript": "^2.3.3"
+  }
+}
